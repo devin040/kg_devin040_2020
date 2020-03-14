@@ -1,6 +1,11 @@
 import unittest
 from main import str_map
 
+"""
+For clarity:
+    0 = True
+    1 = False
+"""
 
 class TestStringMapping(unittest.TestCase):
     def test_standard(self):
