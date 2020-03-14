@@ -18,6 +18,8 @@ class TestStringMapping(unittest.TestCase):
         self.assertEqual(str_map("123", "1234"), 0)
         self.assertEqual(str_map("bard", "foo"), 1)
         self.assertEqual(str_map("bar", "foooooo"), 0)
+        self.assertEqual(str_map("12333", "123"), 0)
+        self.assertEqual(str_map("123334", "123"), 1)
 
     def test_special_chars(self):
         self.assertEqual(str_map("$%^", "$%^"), 0)

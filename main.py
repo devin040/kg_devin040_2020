@@ -19,7 +19,7 @@ def str_map(str1, str2):
     for x, y in zip_longest(str1, str2):
         if map_dict.get(x, -1) == -1:
             map_dict[x] = y
-        if x in map_dict.keys() and y is None:
+        if x in map_dict.keys() and y is None: #allow longer s1 provided the char is already in dict
             continue
         elif map_dict[x] != y:
             print("false")
